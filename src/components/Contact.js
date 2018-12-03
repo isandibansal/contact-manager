@@ -5,25 +5,12 @@ class Contact extends Component {
   render() {
     const { name, email, phone } = this.props;
     return (
-      <div className="ui grid container">
-        <div className="sixteen wide column">
-          <div className="ui fluid card">
-            <div className="content">
-              <div className="header"> {name} </div>
-              <div className="meta">
-                <span>{phone}</span>
-              </div>
-              <div className="description">{email}</div>
-            </div>
-            <div className="extra content">
-              <span className="right floated">Joined in 2013</span>
-              <span>
-                <i className="user icon" />
-                75 Friends
-              </span>
-            </div>
-          </div>
-        </div>
+      <div className="card card-body mb-3">
+        <h4>{name}</h4>
+        <ul className="list-group">
+          <li className="list-group-item">{email}</li>
+          <li className="list-group-item">{phone}</li>
+        </ul>
       </div>
     );
   }

@@ -4,18 +4,20 @@ import PropTypes from 'prop-types';
 const Header = props => {
   const { branding } = props;
   return (
-    <React.Fragment>
-      <div className="ui secondary menu violet inverted">
-        <a className="item" href="/">
+    <nav className="navbar navbar-dark bg-danger mb-3">
+      <div className="container">
+        <a className="navbar-brand" href="/">
           {branding}
         </a>
-        <div className="right menu">
-          <a className="ui item" href="/">
-            Home
-          </a>
-        </div>
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <a href="/" className="nav-link">
+              Home
+            </a>
+          </li>
+        </ul>
       </div>
-    </React.Fragment>
+    </nav>
   );
 };
 
