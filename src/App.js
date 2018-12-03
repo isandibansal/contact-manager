@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Contact from './components/Contact';
 import Header from './components/Header';
+import Contacts from './components/Contacts';
 
 class App extends Component {
   render() {
@@ -9,12 +9,7 @@ class App extends Component {
       <div className="App">
         <Header branding="Contact Manager" />
         <div className="container">
-          <Contact
-            name="john Doe"
-            email="jdoe@gmail.com"
-            phone="555-6668-999"
-          />
-          <Contact />
+          <Contacts />
         </div>
       </div>
     );
