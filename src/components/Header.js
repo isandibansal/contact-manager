@@ -4,9 +4,18 @@ import PropTypes from 'prop-types';
 const Header = props => {
   const { branding } = props;
   return (
-    <div>
-      <h1>{branding}</h1>
-    </div>
+    <React.Fragment>
+      <div className="ui secondary menu violet inverted">
+        <a className="item" href="/">
+          {branding}
+        </a>
+        <div className="right menu">
+          <a className="ui item" href="/">
+            Home
+          </a>
+        </div>
+      </div>
+    </React.Fragment>
   );
 };
 
