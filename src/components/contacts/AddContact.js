@@ -48,6 +48,9 @@ class AddContact extends Component {
       phone: '',
       errors: {}
     });
+
+    // Redirect to Hompage
+    this.props.history.push('/');
   };
 
   render() {
