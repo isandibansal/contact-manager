@@ -6,10 +6,6 @@ class Contact extends Component {
     showContactInfo: false
   };
 
-  onClickDelete = () => {
-    this.props.deleteClickHandler();
-  };
-
   showContactDetails = () => {
     let showContact = this.state.showContactInfo;
     this.setState({
@@ -43,7 +39,7 @@ class Contact extends Component {
             style={{ cursor: 'pointer' }}
           />
           <i
-            onClick={this.onClickDelete}
+            onClick={this.props.deleteClickHandler}
             className="fas fa-times"
             style={{ float: 'right', cursor: 'pointer', color: 'red' }}
           />
